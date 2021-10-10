@@ -1,22 +1,23 @@
 function OnLoad() {
-  cream = new Theme('#f5f3ea', '#e8dfb7', '#e5d280', '#dbc975');
-  dark = new Theme('#636363', '#292929', '#525252', '#424242');
-  light = new Theme('#e0e0e0', '#b3b3b3', '#ededed', '#d9d9d9');
-  let x = document.cookie;
-  console.log(x);
+  cream = new Theme('Cream', '#f5f3ea', '#e8dfb7', '#e5d280', '#dbc975');
+  dark = new Theme('Dark', '#636363', '#292929', '#525252', '#424242');
+  light = new Theme('Light', '#e0e0e0', '#b3b3b3', '#ededed', '#d9d9d9');
+  console.log(document.cookie;);
 
   DisplayWindowWithTheme(cream);
 }
 
 function DisplayWindowWithTheme(WebsiteTheme) {
-  document.cookie = "theme=" + WebsiteTheme;
-
+  SetCookie('Theme', WebsiteTheme.Name);
+  
   document.documentElement.style.setProperty('--bg-color', WebsiteTheme.bgcolor);
   document.documentElement.style.setProperty('--text-color', WebsiteTheme.textColor);
   document.documentElement.style.setProperty('--ui-color', WebsiteTheme.UIColor);
   document.documentElement.style.setProperty('--button-color', WebsiteTheme.buttonColor);
+}
 
-  document.cookie = WebsiteTheme;
+function SetCookie(Name, Value) {
+  document.cookie = Name + '=' + Value + ';';
 }
 
 class Theme {
