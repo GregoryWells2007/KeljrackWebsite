@@ -1,0 +1,248 @@
+:root {
+  --bg-color: black;
+  --text-color: black;
+  --ui-color: black;
+  --button-color: black;
+
+  --typewriter-speed: 1s;
+  --cursor-speed: 500ms;
+  --amount-of-chars: 8;
+  --delay: 0.5s;
+
+  --Settings-Size: 8.3rem;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  background: var(--bg-color);
+  text-align: center;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 65px;
+  position: relative;
+  width: max-content;
+  font-family: "Courier New";
+}
+
+h1::before, h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriter-speed) steps(var(--amount-of-chars)) var(--delay) forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriter-speed) steps(var(--amount-of-chars)) var(--delay) forwards,
+             blink var(--cursor-speed) steps(var(--amount-of-chars)) infinite,
+             getRidOfCursor var(--cursor-speed) steps(var(--amount-of-chars)) calc(var(--typewriter-speed) + calc(var(--delay) + var(--cursor-speed))) forwards;
+}
+
+.Subtitle {
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 15px;
+  margin: 30px;
+
+  transform: translateY(10rem);
+  opacity: 0;
+  animation: ShowTextBox 1s linear calc(var(--typewriter-speed) + var(--delay)) forwards;
+}
+
+.Tabs {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
+  background-color: var(--ui-color);
+}
+
+.Tab {
+  width: 5em;
+  height: 5em;
+  float: left;
+}
+
+.Settings {
+  color: var(--text-color);
+  position: fixed;
+  bottom: 5.5em;
+  left: 0.75em;
+  width: 20rem;
+  height: var(--Settings-Size);
+  border-radius: 1em;
+  background-color: var(--ui-color);
+}
+
+.SettingName {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+.SettingOption {
+  text-align: center;
+  font-size: 20px;
+  border-radius: 1em;
+  width: 80%;
+  border: black;
+  background-color: var(--button-color);
+}
+
+.SettingDropdown {
+  width: 90%;
+  height: 3em;
+  padding: 15px;
+  margin: 15px;
+  font-size: 20px;
+  appearance: none;
+  border-radius: 1em;
+  background-color: var(--button-color);
+
+  border-width: 2px;
+  border-color: black;
+}
+
+.ThemeSetting {
+  width: 25%;
+  height: 3em;
+  margin: 15px;
+  font-size: 20px;
+  appearance: none;
+  border-radius: 1em;
+  background-color: var(--button-color);
+  position: absolute;
+
+  transform: translateX(-4%);
+
+  border-width: 2px;
+  border-color: black;
+}
+
+.ThemeSetting:hover {
+  border-width: 3px;
+}
+
+.SettingDropdown:hover {
+  border-width: 3px;
+}
+
+.WebsiteTheme {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 1em;
+}
+
+.Dark {
+  left: 20em;
+}
+
+.Light {
+  left: 24.15em;
+}
+
+/* Ids */
+
+#HideThemes {
+  animation: HideThemes 1s;
+  opacity: 1;
+  transform: translateX(-1000%);
+}
+
+#ShowThemes {
+  animation: ShowThemes 1s forwards;
+}
+
+#SettingsHidden {
+  animation: HideSettings 1s;
+  transform: translateY(101%);
+}
+
+#SettingsShown {
+  animation: ShowSettings 1s;
+  transform: translateY(0%);
+}
+
+/* Animations */
+
+@keyframes ShowThemes {
+  from {
+    opacity: 0;
+    transform: translateX(-400%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes HideThemes {
+  from {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-400%);
+    display: none;
+  }
+}
+
+@keyframes ShowSettings {
+  from {
+    transform: translateY(101%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes HideSettings {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(101%);
+  }
+}
+
+@keyframes ShowTextBox {
+  to {
+    transform: translateY(-2rem);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+    to {
+      background: transparent;
+    }
+}
+
+@keyframes getRidOfCursor {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+}

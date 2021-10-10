@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Keljrack</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body onload="OnLoad()">
+  <div class="Container">
+    <center><h1>Keljrack</h1></center>
+    <p class="Subtitle">Hello I am Keljrack and you are not. Also i make videos if you want to check them out. Dont they are bad.</p>
+
+    <div class="Settings" id="SettingsHidden">
+      <div class="WebsiteTheme">
+        <p class="SettingName">Website Theme</p>
+        <button class="SettingDropdown" id="ThemeButton" onclick="ShowThemes()">Cream</button>
+
+        <button class="ThemeSetting Cream" id="HideThemes" onclick="SelectTheme('Cream')">Cream</button>
+        <button class="ThemeSetting Dark" id="HideThemes" onclick="SelectTheme('Dark')">Dark</button>
+        <button class="ThemeSetting Light"id="HideThemes" onclick="SelectTheme('Light')">Light</button>
+
+      </div>
+
+    </div>
+
+    <div class="Tabs">
+      <img class="Tab" onclick="ShowSettings()" src="https://img.icons8.com/material-outlined/24/000000/settings--v1.svg"/>
+    </div>
+  </div>
+</body>
