@@ -61,7 +61,7 @@ h1::after {
 }
 
 .Tabs {
-  animation: ShowTabs 1s ease 0.3s forwards;
+  animation: ShowTabs 1s ease forwards;
   position: fixed;
   bottom: 0;
   width: 100%;
