@@ -21,7 +21,8 @@ function SetCookie(Name, Value) {
 }
 
 class Theme {
-  constructor(BackgroundColor, TextColor, UIColor, ButtonColor) {
+  constructor(Name, BackgroundColor, TextColor, UIColor, ButtonColor) {
+    this.Name = Name;
     this.bgcolor = BackgroundColor;
     this.textColor = TextColor;
     this.UIColor = UIColor;
