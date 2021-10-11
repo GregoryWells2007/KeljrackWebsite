@@ -77,15 +77,22 @@ h1::after {
   padding: 20px;
 }
 
-.Settings {
+.DisplayWindow {
   color: var(--text-color);
   position: fixed;
   bottom: 5.5em;
-  left: 0.75em;
   width: 20rem;
   height: var(--Settings-Size);
   border-radius: 1em;
   background-color: var(--ui-color);
+}
+
+.Projects {
+  left: 20.75em;
+}
+
+.Settings {
+  left: 0.75em;
 }
 
 .SettingName {
@@ -173,7 +180,7 @@ h1::after {
   transform: translateY(101%);
 }
 
-#SettingsShown {
+#SettingsShown { 
   animation: ShowSettings 1s;
   transform: translateY(0%);
 }
