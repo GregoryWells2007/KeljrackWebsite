@@ -67,10 +67,10 @@ h1::after {
   height: 5em;
   background-color: var(--ui-color);
   display: grid;
+  color: red;
 }
 
 .Tab {
-  /*color: var(--text-color);*/
   color: red;
   vertical-align: center;
   float: left;
@@ -97,8 +97,6 @@ h1::after {
 .Projects {
   background-color: var(--ui-color);
   left: 38%;
-  border-width: 2px;
-  border-color: red;
 }
 
 .Settings {
