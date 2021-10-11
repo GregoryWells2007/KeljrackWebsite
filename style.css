@@ -61,6 +61,7 @@ h1::after {
 }
 
 .Tabs {
+  animation: ShowTabs 1s ease 0.3s forwards;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -78,15 +79,6 @@ h1::after {
   padding: none;
   float: left;
   background-color: var(--ui-color);
-  
-  /*color: red;
-  vertical-align: center;
-  float: left;
-  width: 33.3%;
-  font-size: 50px;
-  background-color: var(--ui-color);
-  border: none;
-  height: 5em;*/
   transition: background-color 0.2s;
 }
 
@@ -209,6 +201,16 @@ h1::after {
 }
 
 /* Animations */
+
+@keyframes ShowTabs {
+  from {
+    height: 0; 
+  } 
+  
+  to {
+    height: 5em; 
+  }
+}
 
 @keyframes ShowThemes {
   from {
