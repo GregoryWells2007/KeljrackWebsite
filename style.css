@@ -90,7 +90,6 @@ h1::after {
   position: fixed;
   bottom: 5.5em;
   width: 20rem;
-  height: var(--Settings-Size);
   border-radius: 1em;
   background-color: var(--ui-color);
 }
