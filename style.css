@@ -89,7 +89,9 @@ h1::after {
 
 .Projects {
   background-color: var(--ui-color);
-  left: 2em;
+  left: 20.75em;
+  border-width: 2px;
+  border-color: black;
 }
 
 .Settings {
