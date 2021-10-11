@@ -2,7 +2,7 @@ function OnLoad() {
   cream = new Theme('Cream', '#f5f3ea', '#e8dfb7', '#e5d280', '#dbc975');
   dark = new Theme('Dark', '#636363', '#292929', '#525252', '#424242');
   light = new Theme('Light', '#e0e0e0', '#b3b3b3', '#ededed', '#d9d9d9');
-  console.log(document.cookie;);
+  console.log(document.cookie);
 
   DisplayWindowWithTheme(cream);
 }
