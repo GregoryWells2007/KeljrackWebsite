@@ -87,6 +87,7 @@ h1::after {
   background-color: var(--ui-color);
   border: none;
   height: 5em;*/
+  transition: background-color 0.2s;
 }
 
 .Tab:hover {
