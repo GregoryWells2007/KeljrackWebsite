@@ -71,10 +71,13 @@ h1::after {
 .Tab {
   height: 100%;
   color: var(--text-color);
-  vertical-align: center;
   width: 33.3%;
   font-size: 50px;
   border: none;
+  margin: none;
+  padding: none;
+  float: left;
+  background-color: var(--ui-color);
   
   /*color: red;
   vertical-align: center;
