@@ -7,6 +7,10 @@ function OnLoad() {
   DisplayWindowWithTheme(cream);
 }
 
+function LoadProject(Name) {
+  window.location.href = Name + ".html";
+}
+
 function DisplayWindowWithTheme(WebsiteTheme) {
   SetCookie('Theme', WebsiteTheme.Name);
   
