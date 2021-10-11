@@ -22,14 +22,20 @@
         <button class="ThemeSetting Light"id="HideThemes" onclick="SelectTheme('Light')">Light</button>
 
       </div>
-
+    </div>
+    
+    <div class="Settings" id="SettingsHidden">
+      <div class="Projects">
+        <p class="SettingName">Projects</p>
+        <button id="ThemeButton" onclick="LoadProject()">Bit Tool</button>
+      </div>
     </div>
 
     <div class="Tabs">
       <center>
         <button class="Tab" onclick="ShowSettings()">Settings</button>
-        <button class="Tab" onclick="ShowSettings()">Projects</button>
-        <button class="Tab" onclick="ShowSettings()">Favorite Videos</button>
+        <button class="Tab" onclick="ShowProjects()">Projects</button>
+        <button class="Tab" onclick="ShowVideos()">Favorite Videos</button>
       </center>
     </div>
   </div>
