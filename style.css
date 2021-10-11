@@ -66,19 +66,17 @@ h1::after {
   width: 100%;
   height: 5em;
   background-color: var(--ui-color);
-  display: grid;
-  color: red;
 }
 
 .Tab {
-  color: red;
+  /*color: red;
   vertical-align: center;
   float: left;
   width: 33.3%;
   font-size: 50px;
   background-color: var(--ui-color);
   border: none;
-  height: 5em;
+  height: 5em;*/
 }
 
 .Tab:hover {
