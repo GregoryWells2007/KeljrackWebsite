@@ -69,9 +69,12 @@ h1::after {
 }
 
 .Tab {
-  height: 5em;
+  height: 100%;
   color: var(--text-color);
   vertical-align: center;
+  width: 33.3%;
+  font-size: 50px;
+  border: none;
   
   /*color: red;
   vertical-align: center;
@@ -198,10 +201,6 @@ h1::after {
 #ProjectsShown { 
   animation: ShowSettings 1s;
   transform: translateY(0%);
-}
-
-#TabButton {
-  color: red;  
 }
 
 /* Animations */
