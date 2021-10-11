@@ -73,6 +73,7 @@ h1::after {
   vertical-align: center;
   height: 5em;
   float: left;
+  width: 33%;
 }
 
 .Settings {
