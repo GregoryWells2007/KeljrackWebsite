@@ -38,6 +38,10 @@ function ShowSettings() {
   SwitchIds('SettingsHidden', 'SettingsShown');
 }
 
+function ShowProjects() {
+  SwitchIds('ProjectsHidden', 'ProjectsShown');
+}
+
 function ShowThemes() {
   var elements = document.getElementsByClassName('ThemeSetting');
   for (var i = 0; i < elements.length; i++) {
@@ -47,8 +51,6 @@ function ShowThemes() {
       elements[i].id = 'HideThemes';
     }
   }
-
-
 }
 
 function SelectTheme(NewTheme) {
