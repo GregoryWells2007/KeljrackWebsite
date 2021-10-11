@@ -73,8 +73,8 @@ h1::after {
   vertical-align: center;
   height: 5em;
   float: left;
-  width: 33%;
-  padding: 20px;
+  width: 30%;
+  padding: 3.3%;
 }
 
 .DisplayWindow {
@@ -89,13 +89,13 @@ h1::after {
 
 .Projects {
   background-color: var(--ui-color);
-  left: 40.75em;
+  left: 33%;
   border-width: 2px;
   border-color: black;
 }
 
 .Settings {
-  left: 0.75em;
+  left: 0%;
 }
 
 .SettingName {
