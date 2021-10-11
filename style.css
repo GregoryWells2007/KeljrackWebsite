@@ -123,8 +123,10 @@ h1::after {
   border-radius: 1em;
   background-color: var(--button-color);
 
-  border-width: 2px;
+  border-style: solid;
   border-color: black;
+  border-width: 2px;
+  border-radius: 1em;
 }
 
 .ThemeSetting {
