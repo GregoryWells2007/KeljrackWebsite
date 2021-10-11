@@ -102,6 +102,7 @@ h1::after {
 }
 
 .Settings {
+  color: red;
   left: 16.5%;
 }
 
