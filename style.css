@@ -88,6 +88,7 @@ h1::after {
 }
 
 .Projects {
+  background-color: var(--ui-color);
   left: 2em;
 }
 
