@@ -75,7 +75,13 @@ h1::after {
   float: left;
   width: 33.3%;
   text-size: 35px;
-  background-color: var(--ui-color);
+  background-color: var(--button-color);
+  opacity: 0;
+  border: none;
+}
+
+.Tab:hover {
+  opacity: 0.5;
 }
 
 .DisplayWindow {
@@ -90,13 +96,13 @@ h1::after {
 
 .Projects {
   background-color: var(--ui-color);
-  left: 33%;
+  left: 49.5%;
   border-width: 2px;
   border-color: black;
 }
 
 .Settings {
-  left: 0%;
+  left: 16.5%;
 }
 
 .SettingName {
