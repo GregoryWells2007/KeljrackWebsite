@@ -198,6 +198,10 @@ h1::after {
   transform: translateY(0%);
 }
 
+#TabButton {
+  color: red;  
+}
+
 /* Animations */
 
 @keyframes ShowThemes {
