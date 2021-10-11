@@ -69,6 +69,10 @@ h1::after {
 }
 
 .Tab {
+  height: 5em;
+  color: var(--text-color);
+  vertical-align: center;
+  
   /*color: red;
   vertical-align: center;
   float: left;
