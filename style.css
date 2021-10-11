@@ -90,7 +90,8 @@ h1::after {
 }
 
 .Tab:hover {
-  background-color: var(--button-color);
+    background-color: var(--button-color);
+  transition: background-color 1s;
 }
 
 .DisplayWindow {
