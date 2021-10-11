@@ -160,13 +160,6 @@ h1::after {
   border-width: 3px;
 }
 
-.WebsiteTheme {
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-  border-radius: 1em;
-}
-
 .Dark {
   left: 20em;
 }
