@@ -71,10 +71,11 @@ h1::after {
 
 .Tab {
   vertical-align: center;
-  height: 5em;
+  height: 3em;
   float: left;
-  width: 30%;
-  padding: 3.3%;
+  width: 33%;
+  text-size: 35px;
+  background-color: var(--ui-color);
 }
 
 .DisplayWindow {
