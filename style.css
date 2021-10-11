@@ -78,6 +78,7 @@ h1::after {
   opacity: 1;
   border: none;
   text-color: black;
+  height: 5em;
 }
 
 .Tab:hover {
@@ -96,13 +97,13 @@ h1::after {
 
 .Projects {
   background-color: var(--ui-color);
-  left: 43%;
+  left: 38%;
   border-width: 2px;
   border-color: black;
 }
 
 .Settings {
-  left: 10%;
+  left: 5%;
 }
 
 .SettingName {
