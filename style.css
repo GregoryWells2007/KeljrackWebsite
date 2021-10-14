@@ -10,6 +10,11 @@
   --delay: 0.5s;
 
   --Settings-Size: 8.3rem;
+  
+  transition: --bg-color 0.2s;
+  transition: --text-color 0.2s;
+  transition: --ui-color 0.2s;
+  transition: --button-color 0.2s;
 }
 
 .HomeButton {
